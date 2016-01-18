@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &193312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 484970}
+  - 114: {fileID: 11476762}
+  m_Layer: 0
+  m_Name: IAP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &484970
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193312}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11476762
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961f0fd05040149b9b9a18b1ea42b433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iOSProducts: []
+  androidKey: 
+  androidProducts: []
+  callbacks:
+    onInitialized:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: sdkbox.IAP+Callbacks+BoolEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    onSuccess:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: sdkbox.IAP+Callbacks+ProductEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    onFailure:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: sdkbox.IAP+Callbacks+ProductStringEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    onCanceled:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: sdkbox.IAP+Callbacks+ProductEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    onRestored:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: sdkbox.IAP+Callbacks+ProductEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    onProductRequestSuccess:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: sdkbox.IAP+Callbacks+ProductArrayEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    onProductRequestFailure:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: sdkbox.IAP+Callbacks+StringEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    onRestoreComplete:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: sdkbox.IAP+Callbacks+BoolStringEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: config.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: products.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: androidKey
+      value: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuxoumyLS006Qk+M6Nfu4w+iuWgBdVLDnuqbXCacsG2boeByEKaeEE4JfFLMuqlvdbJHGFHggtEGbIcQa3eaV5tIY4Mw/iFdisyrclQN5hU0VRO0IOeBXL4CjhL0TB22I27g2pwujk6U4VERVcGTNDBMxooQREtRr+yK/IKQAaTY93k9wVbZYHXxW4IWRePuijEX28QLO1dEOl+ugN1dTdM3zHBEaobbOjOy4kttqp6CEPouu+O7b4qQJgD1aEtWVO2zM4q5UwC56taRmsEl5oGkDbQXXlP98k1c0MzE7Tj5Yvngq+eXn19s4OwI4DHCYAzL9p/l2NUdGgxmbxh9KAwIDAQAB
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: products.Array.data[0].name
+      value: Bundle of Coins
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: products.Array.data[0].id
+      value: com.bundle.coins
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: products.Array.data[0].type
+      value: consumable
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 193312}
+  m_IsPrefabParent: 1
